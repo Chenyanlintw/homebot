@@ -1,4 +1,27 @@
 body {
     color: #fff;
     background-color: #444;
+    font-family: monospace;
+    margin: 0;
+    padding: 1.3rem;
 }
+
+.data-table {
+	width: 100%;
+	font-size: 1.1rem;
+}
+.data-table tbody {
+	background-color: #222;
+}
+
+.data-table th,
+.data-table td {
+	text-align: right;
+	padding: 5px 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	white-space: nowrap;
+}
+
+.data-table > tbody > tr:first-child > td {
+	background-color: green;
+} 

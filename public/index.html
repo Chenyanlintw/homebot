@@ -1,21 +1,26 @@
 <html>
     <head>
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
         <title>Homebot</title>
     </head>
     <body>
         <div>Homebot</div>
-	<script src="js/api.js"></script>
-	<script>
-	    api.fetch({
-                path: "/enviroment/get_all",
-		success: (result) => {
-		    console.log(result);
-		},
-		error: (err) => {
-		    console.log(err);
-		}
-            });
-	</script>
+
+        <table class="data-table" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>時間</th>
+                    <th>溫度</th>
+                    <th>濕度</th>
+                </tr>
+            </thead>
+            <tbody id="envir-data-list">
+            </tbody>
+        </table>
+
+
+        <script src="js/api.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
