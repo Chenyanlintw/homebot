@@ -1,0 +1,21 @@
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>Homebot</title>
+    </head>
+    <body>
+        <div>Homebot</div>
+	<script src="js/api.js"></script>
+	<script>
+	    api.fetch({
+                path: "/enviroment/get_all",
+		success: (result) => {
+		    console.log(result);
+		},
+		error: (err) => {
+		    console.log(err);
+		}
+            });
+	</script>
+    </body>
+</html>
