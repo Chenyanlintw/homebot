@@ -1,0 +1,31 @@
+{
+  "name": "homebot",
+  "version": "1.0.0",
+  "description": "A home bot for raspberry pi by using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Chenyanlintw/homebot"
+  },
+  "keywords": [
+    "bot",
+    "raspberry",
+    "pi",
+    "node"
+  ],
+  "author": "Chen Yan Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chenyanlintw/homebot/issues"
+  },
+  "homepage": "https://github.com/Chenyanlintw/homebot#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Chenyanlintw"
+  }
+}
